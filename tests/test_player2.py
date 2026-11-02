@@ -52,3 +52,4 @@ def test_get_move_starter() -> None:
     actual_move = Player2.get_move(board.board)
 
     assert actual_move in possible_moves
+

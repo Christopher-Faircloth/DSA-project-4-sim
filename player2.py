@@ -115,6 +115,7 @@ class Player2:
 
                 return miniBoard
 
+        return None
         raise RuntimeError("get miniboard failed")
 
     @staticmethod
@@ -145,7 +146,7 @@ class Player2:
 
             if current_set in checked_sets:
                 continue
-
+            checked_sets.add(current_set)
             # reset board
             temp_board = [row.copy() for row in board]
 
@@ -195,15 +196,5 @@ class Player2:
                         valid_moves.append(move)
         return valid_moves
         raise NotImplementedError
-git init
-git status
-git remote add origin https://github.com/Christopher-Faircloth/DSA-project-4-sim.git
-git remote origin https://github.com/Christopher-Faircloth/DSA-project-4-sim.git
-Get-Location
-git remote set-url origin https://github.com/Christopher-Faircloth/DSA-project-4-sim.git
-git remote -v
-git commit -m "first commit"
-git branch -M main
-git add .
-git push -u origin main
+
 
